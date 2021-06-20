@@ -76,12 +76,6 @@ public class Main {
         System.out.println("Pressione Enter para Continuar!");
         sc.nextLine();
         break;
-      case 3:
-        sc.nextLine();
-        ConsultarPerguntas();
-
-        break;
-
       default:
         System.out.println("Opção inválida! Tente novamente");
       }
