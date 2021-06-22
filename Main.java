@@ -76,6 +76,12 @@ public class Main {
         System.out.println("Pressione Enter para Continuar!");
         sc.nextLine();
         break;
+      case 3:
+        sc.nextLine();
+        ConsultarPerguntas();
+
+        break;
+
       default:
         System.out.println("Opção inválida! Tente novamente");
       }
@@ -316,7 +322,8 @@ public class Main {
       if(opcao == 1){
         id = PS.getId();
         tipo = (byte) 'P';  
-        tipoEscolhido="pergunta selecionada \"" +PS.getPergunta()+ "\" ";   
+        tipoEscolhido="pergunta selecionada \"" +PS.getPergunta()+ "\" ";  
+        valido = true; 
       }else{
          
         System.out.println("Digite o número da resposta que deseja avaliar. \nDigite 0 para retornar ao menu anterior");
